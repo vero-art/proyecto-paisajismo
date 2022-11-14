@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #c4c0c0;
+  width: 100%;
+  height: 600px; }
+  header h1 {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: overline; }
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #060606; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    text-align: right;
+    height: 100px; }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px; }
+
+main {
+  background-color: black;
+  height: 2000px;
+  width: 100%; }
+
+.padre {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 1600px; }
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 60%;
+  background-color: #030303;
+  transition: all 2s;
+  filter: grayscale(60%); }
+
+.div:hover {
+  transform: scale(1.1, 1.1);
+  filter: grayscale(0); }
+
+.img_1 {
+  height: 900px;
+  width: 90%;
+  object-fit: cover; }
+
+.img_2 {
+  height: 900px;
+  width: 90%;
+  object-fit: cover; }
+
+h2 {
+  display: flex;
+  color: white;
+  height: 200px;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  display: flex;
+  background-color: #222222;
+  width: 100%;
+  height: 400px;
+  justify-content: right; }
+
+.footer, .footer--contacto, .footer--nosotros, .footer--proyectos, .footer--terra {
+  display: flex;
+  background-color: #222222;
+  width: 100%;
+  height: 400px;
+  justify-content: right; }
+
+.h3 {
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  height: 400px;
+  width: 100%;
+  align-items: center;
+  text-align: center; }
+
+.div_footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 350px; }
+
+.bi-instagram {
+  color: white;
+  font-size: 80px; }
+
+.bi-instagram:hover {
+  color: #e01b71; }
+
+/* terrazas */
+#terrazas_ul a {
+  font-size: 30px; }
+
+#terrazas_ul {
+  display: flex; }
+
+#terrazas_main {
+  display: column;
+  background-color: gray;
+  width: 100%;
+  height: 2000px; }
+
+.inframe {
+  display: flex;
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.grid {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a1 a2 a2" "a3 a3 a4" "a5 a6 a6";
+  justify-items: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  row-gap: 5%; }
+
+.img11 {
+  grid-area: a2; }
+
+.img_11 {
+  flex-direction: row;
+  width: 100%;
+  height: 300px; }
+
+.img12 {
+  grid-area: a3; }
+
+.img_12 {
+  flex-direction: row;
+  width: 100%;
+  height: 300px; }
+
+.img13 {
+  grid-area: a6; }
+
+.img_13 {
+  flex-direction: row;
+  width: 100%;
+  height: 300px; }
+
+.footer_terra {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.h2_terra {
+  display: flex;
+  height: 200px;
+  justify-content: left;
+  align-items: center;
+  font-size: 40px; }
+
+/* nosotros */
+.div_nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+  width: 70%; }
+  .div_nosotros p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 60%;
+    font-size: 100px;
+    color: #f3d1d1; }
+
+.footer_nosotros {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: right;
+  align-items: center; }
+
+.h2_nosotros {
+  height: 200px;
+  width: 90%; }
+
+.btn--inicio {
+  background-color: white;
+  color: black;
+  width: 90px;
+  height: 120px;
+  font-size: 25px;
+  border-radius: 20px;
+  flex-direction: row-reverse; }
+
+.btn--contactanos {
+  background-color: #f74aac;
+  color: #f1ce9a;
+  width: 170px;
+  height: 120px;
+  font-size: 25px;
+  border-radius: 30px;
+  border: 5px solid #1f0101; }
+
+/*proyectos  */
+#hijo_proyecto1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: a1;
+  width: 100%;
+  height: 100%;
+  animation-name: apariencia;
+  animation-duration: 6s; }
+
+#hijo_proyecto2 {
+  display: flex;
+  justify-content: center;
+  grid-area: a5;
+  width: 80%;
+  height: 80%;
+  animation-name: apariencia;
+  animation-duration: 6s; }
+
+#hijo_proyecto3 {
+  display: flex;
+  justify-content: center;
+  grid-area: a9;
+  width: 80%;
+  height: 80%;
+  animation-name: apariencia;
+  animation-duration: 6s; }
+
+#img {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  border: solid black; }
+
+@keyframes apariencia {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.footer_proyectos {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center; }
+
+.h2_proyectos {
+  font-size: 50px; }
+
+/* contacto */
+#padre_cont {
+  height: 2000px;
+  background-color: black; }
+
+#hijo_1 {
+  height: 900px;
+  background-color: black; }
+
+#hijo_2 {
+  height: 900px;
+  background-color: black; }
+
+#hijo_3 {
+  width: 60%;
+  height: 900px;
+  background-color: gray;
+  font-size: 40px; }
+
+#hijo_4 {
+  height: 900px;
+  background-color: black; }
+
+p {
+  font-size: 30px;
+  color: white; }
+
+.img_contacto {
+  width: 90%;
+  height: 700px; }
+
+.img_contacto2 {
+  width: 90%; }
+
+.footer_contacto {
+  display: flex;
+  height: 300px;
+  width: 100%; }
+
+.nav-link {
+  font-size: 40px; }
+
+.d-block {
+  object-fit: cover; }
+
+.bi-instagram {
+  color: white;
+  font-size: 80px; }
+
+.bi-whatsapp {
+  color: white;
+  font-size: 80px; }
+
+.bi-whatsapp:hover {
+  color: #e01b71; }
+
+.bi-facebook {
+  color: white;
+  font-size: 80px; }
+
+.bi-facebook:hover {
+  color: #e01b71; }
+
+/* media queri */
+@media only screen and (max-width: 600px) {
+  .padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1600px;
+    width: 100%;
+    background-color: #030303; }
+  .img_1 {
+    height: 500px;
+    width: 90%; }
+  .img_2 {
+    height: 500px;
+    width: 90%; }
+  h1 {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: overline;
+    text-align: center; }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px; }
+  ul {
+    flex-direction: column; }
+  h2 {
+    display: flex;
+    color: white;
+    height: 200px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center; }
+  .h3 {
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    text-align: center; }
+  .img_footer {
+    height: 100px;
+    width: 30%; }
+  .img1_footer {
+    height: 100px;
+    width: 30%; }
+  /* terraza */
+  .h1_terr {
+    font-size: 50px;
+    text-align: center; }
+  #terrazas_ul a {
+    flex-direction: column;
+    height: 150px;
+    font-size: 15px; }
+  .img_11 {
+    flex-direction: row;
+    width: 100%; }
+  .img_12 {
+    flex-direction: row;
+    width: 100%; }
+  .img_13 {
+    flex-direction: row;
+    width: 100%; }
+  .inframe {
+    height: auto;
+    width: 100%; }
+  /* proyectos */
+  #hijo_proyecto1 {
+    flex-direction: column;
+    height: auto;
+    width: 200%; }
+  #hijo_proyecto2 {
+    flex-direction: column;
+    height: auto;
+    width: 300%; }
+  #hijo_proyecto3 {
+    flex-direction: column;
+    height: auto;
+    width: 100%; }
+  .h1_proyectos {
+    font-size: 50px; }
+  /* contacto */
+  .h1_contacto {
+    font-size: 50px; } }
+
+@media screen and (min-width: 600px) {
+  h1 {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: overline;
+    text-align: center; }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px; }
+  .h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    text-align: center; }
+  .img_footer {
+    height: 100px;
+    width: 25%; }
+  .img1_footer {
+    height: 100px;
+    width: 25%; }
+  .div_footer {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 100%;
+    height: 350px; } }
